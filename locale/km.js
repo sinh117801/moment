@@ -44,8 +44,8 @@
             '_'
         ),
         weekdays: 'អាទិត្យ_ច័ន្ទ_អង្គារ_ពុធ_ព្រហស្បតិ៍_សុក្រ_សៅរ៍'.split('_'),
-        weekdaysShort: 'អា_ច_អ_ព_ព្រ_សុ_ស'.split('_'),
-        weekdaysMin: 'អា_ច_អ_ព_ព្រ_សុ_ស'.split('_'),
+        weekdaysShort: 'អា_ច_អ_ព_ព្រហ_សុ_ស'.split('_'),
+        weekdaysMin: 'អា_ច_អ_ព_ព្រហ_សុ_ស'.split('_'),
         weekdaysParseExact: true,
         longDateFormat: {
             LT: 'HH:mm',
@@ -75,8 +75,8 @@
             sameElse: 'L',
         },
         relativeTime: {
-            future: '%sទៀត',
-            past: '%sមុន',
+            future: '%s ទៀត',
+            past: '%s មុន',
             s: 'ប៉ុន្មានវិនាទី',
             ss: '%d វិនាទី',
             m: 'មួយនាទី',
@@ -91,7 +91,7 @@
             yy: '%d ឆ្នាំ',
         },
         dayOfMonthOrdinalParse: /ទី\d{1,2}/,
-        ordinal: 'ទី%d',
+        ordinal: 'ទី %d',
         preparse: function (string) {
             return string.replace(/[១២៣៤៥៦៧៨៩០]/g, function (match) {
                 return numberMap[match];
